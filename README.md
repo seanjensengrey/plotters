@@ -221,7 +221,7 @@ The feature `evcxr` should be enabled when including Plotters to Jupyter Noteboo
 The following code shows a minimal example of this.
 
 ```text
-:dep plotters = { git = "https://github.com/38/plotters", default_features = false, features = ["evcxr"] }
+:dep plotters = { git = "https://github.com/plotters-rs/plotters", default_features = false, features = ["evcxr", "bitmap_backend", "line_series"] }
 extern crate plotters;
 use plotters::prelude::*;
 
@@ -265,7 +265,7 @@ Follow the instruction on [this page](https://github.com/google/evcxr/tree/maste
 After that, you should be able to start your Jupyter server locally and load the tutorial!
 
 ```bash
-git clone https://github.com/38/plotters-doc-data
+git clone https://github.com/plotters-rs/plotters-doc-data
 cd plotteres-doc-data
 jupyter notebook
 ```
